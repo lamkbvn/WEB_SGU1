@@ -1,0 +1,112 @@
+.select-page{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+}
+
+.to-page-women-img{
+  background-image: url(../img/picture-to-page/women.jpg);
+}
+
+.to-page-men-img{
+background-image: url(../img/picture-to-page/men.jpg)
+}
+
+.to-page-kid-img{
+background-image: url(../img/picture-to-page/kid.jpg)
+}
+
+.to-page{
+  background-position: 50%!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  
+  width: 33.33%;
+  height: 420px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media   (max-width: 900px) {
+  .to-page{
+    width: 50%;
+  }
+  
+}
+
+@media (max-width: 700px){
+  .to-page{
+    width:  100%;
+    height: 600px;
+  }
+}
+
+.name-page{
+  float: left;
+  margin-top: 155px;
+  font-size: 65px;
+  font-weight: bolder;
+  color: #ffffff;
+  text-shadow: 5px 5px black ;
+
+  transition:  transform 0.5s;
+}
+
+.show-page{
+  background-color: aliceblue;
+  margin-top: 80px;
+  border: 1px solid black;
+  padding: 8px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight:530;
+
+  display:flex;
+  align-items: center;
+
+}
+
+.btn-show-page{
+  background-image: url("../img/show-page/arrow-right-short.svg");
+  background-repeat: no-repeat;
+  background-size: 21px;
+
+  width: 20px;
+  height: 20px;
+
+  transition:  transform 0.5s;
+}
+
+.to-page:hover{
+  background-color: gray;
+}
+
+.to-page:hover .name-page{
+  transform: scale(1.2);
+}
+
+.show-page:hover .btn-show-page{
+  transform: translateX(5px);
+}
+
+.to-page:hover .btn-show-page{
+  transform: translateX(5px);
+
+}
+
+.to-page:hover{
+  -webkit-filter: brightness(80%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(30%);
+}
+
+
+
+
+
